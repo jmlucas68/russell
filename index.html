@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bertrand Russell: Vida, Obra y Pensamiento</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2c3e50; /* Azul oscuro */
+            --secondary-color: #3498db; /* Azul brillante */
+            --background-color: #ecf0f1; /* Gris claro */
+            --text-color: #34495e; /* Gris oscuro */
+            --card-bg-color: #ffffff;
+            --quote-border-color: #3498db;
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            line-height: 1.7;
+            margin: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), url('https://upload.wikimedia.org/wikipedia/commons/a/a6/Bertrand_Russell_transparent_bg.png') no-repeat center center;
+            background-size: contain;
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            text-align: center;
+            padding: 100px 20px;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+            header h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 3.5rem;
+                margin: 0;
+                text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            }
+
+            header p {
+                font-size: 1.2rem;
+                font-style: italic;
+                opacity: 0.9;
+            }
+
+        main section {
+            background-color: var(--card-bg-color);
+            margin-top: 30px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--primary-color);
+            font-size: 1.5rem;
+        }
+
+        blockquote {
+            border-left: 5px solid var(--quote-border-color);
+            margin: 20px 0;
+            padding: 15px 20px;
+            background-color: #f8f9fa;
+            font-size: 1.1rem;
+            font-style: italic;
+        }
+
+            blockquote footer {
+                margin-top: 10px;
+                font-style: normal;
+                font-weight: bold;
+                text-align: right;
+                color: var(--primary-color);
+            }
+
+        .biography-grid {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+            .biography-grid img {
+                max-width: 250px;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+            ul li {
+                padding: 10px 0;
+                border-bottom: 1px solid #e0e0e0;
+            }
+
+                ul li:last-child {
+                    border-bottom: none;
+                }
+
+        a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        .obra-card {
+            background-color: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+            .obra-card h4 {
+                margin-top: 0;
+                font-family: 'Montserrat', sans-serif;
+                color: var(--primary-color);
+            }
+
+        .links a {
+            margin-right: 15px;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: var(--secondary-color);
+            color: white;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            font-weight: normal;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+            .links a:hover {
+                background-color: var(--primary-color);
+                text-decoration: none;
+            }
+
+        footer.main-footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        @media (max-width: 768px) {
+            .biography-grid {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 2.5rem;
+            }
+
+            header {
+                padding: 60px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bertrand Russell</h1>
+        <p>Filósofo, Lógico, Matemático, Activista y Premio Nobel</p>
+    </header>
+
+    <div class="container">
+        <main>
+            <section id="biografia">
+                <h2>Una Mente Inquieta</h2>
+                <div class="biography-grid">
+                    <img src="https://raw.githubusercontent.com/jmlucas68/filosofos/refs/heads/main/images/Russell.jpg" alt="Retrato de Bertrand Russell en 1957">
+                    <div>
+                        <p><strong>Bertrand Arthur William Russell</strong> (1872-1970) fue una de las figuras intelectuales más influyentes del siglo XX. Nacido en una familia aristocrática británica, su vida abarcó casi un siglo de transformaciones radicales, desde la era victoriana hasta la Guerra Fría.</p>
+                        <p>Educado en el Trinity College de Cambridge, pronto destacó por su brillantez en matemáticas y filosofía. Su carrera fue una amalgama de rigor académico, activismo político y una prolífica producción literaria. Fue un firme defensor del pacifismo (aunque con matices, oponiéndose a la Primera Guerra Mundial pero apoyando la intervención contra el nazismo), el laicismo y la libertad individual. Su activismo le llevó a la cárcel en más de una ocasión. En 1950, fue galardonado con el <strong>Premio Nobel de Literatura</strong> "en reconocimiento a sus variados y significativos escritos en los que defiende los ideales humanitarios y la libertad de pensamiento".</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contexto">
+                <h2>Contexto Histórico y Filosófico</h2>
+                <p>Russell vivió en una época de profundos cambios. Presenció dos guerras mundiales, el auge del fascismo y el comunismo, y el inicio de la era nuclear. Este convulso telón de fondo moldeó su pensamiento político y social, convirtiéndolo en un crítico incansable del dogmatismo y el autoritarismo.</p>
+                <p>Filosóficamente, Russell emergió en un momento en que el <strong>idealismo absoluto</strong> de Hegel, popular en la Gran Bretaña de finales del siglo XIX, comenzaba a ser cuestionado. Junto a G. E. Moore, Russell lideró la rebelión contra esta corriente, abogando por un retorno al realismo y el empirismo. Este movimiento sentó las bases para el nacimiento de la <strong>filosofía analítica</strong>, una de las corrientes dominantes en el mundo anglosajón, que pone el énfasis en la claridad, la lógica y el análisis del lenguaje como herramientas para resolver problemas filosóficos.</p>
+            </section>
+
+            <section id="pensamiento">
+                <h2>Principales Ideas Filosóficas</h2>
+
+                <h3>Logicismo y Filosofía de las Matemáticas</h3>
+                <p>Uno de los proyectos más ambiciosos de Russell fue el <strong>logicismo</strong>: la tesis de que las matemáticas son, en última instancia, una rama de la lógica. Intentó demostrar esto en su monumental obra <em>Principia Mathematica</em>, escrita con Alfred North Whitehead.</p>
+                <blockquote>
+                    <p>La lógica matemática se ocupa de las clases de proposiciones, y (...) las proposiciones matemáticas son todas de un cierto tipo que puede definirse lógicamente. Así, aunque la lógica no puede definir ninguna clase particular de objetos, puede definir la clase de todas las clases, y la clase de todas las relaciones, y así sucesivamente.</p>
+                    <footer>Introducción a la filosofía matemática (1919)</footer>
+                </blockquote>
+
+                <h3>Atomismo Lógico y la Teoría de las Descripciones</h3>
+                <p>Russell postuló que el mundo está compuesto por "hechos atómicos" independientes, y que el lenguaje ideal debería reflejar esta estructura. Su <strong>Teoría de las Descripciones Definidas</strong> (ej. "el actual rey de Francia") fue una herramienta revolucionaria para analizar el lenguaje y disolver problemas filosóficos que surgían de una gramática engañosa.</p>
+                <blockquote>
+                    <p>La tesis central de la teoría de las descripciones es que una frase que contiene una descripción definida no es sobre un objeto, sino que expresa una proposición general. (...) Así, "el autor de Waverley era escocés" significa "Hay una entidad c tal que 'x escribió Waverley' es verdadero si y solo si x es c, y c era escocés".</p>
+                    <footer>Resumen de su teoría, explicado en múltiples obras</footer>
+                </blockquote>
+
+                <h3>Ética, Política y Crítica a la Religión</h3>
+                <p>Russell fue un humanista y un racionalista. Su ética se basaba en el deseo de minimizar el sufrimiento y maximizar la felicidad, con un fuerte componente de compasión. Fue un crítico feroz de la religión organizada, a la que consideraba una fuente de miedo, dogmatismo y conflicto.</p>
+                <blockquote>
+                    <p>Mi punto de vista sobre la religión es el de Lucrecio. La considero una enfermedad nacida del miedo y una fuente de indecible miseria para la raza humana. (...) No puedo, por tanto, creer en Dios y en la inmortalidad; y si algo he de tener por divino, será más bien el hombre, en sus logros y esperanzas.</p>
+                    <footer>Por qué no soy cristiano (1927)</footer>
+                </blockquote>
+                <blockquote>
+                    <p>Tres pasiones, simples pero abrumadoramente fuertes, han gobernado mi vida: el anhelo de amor, la búsqueda del conocimiento y una insoportable piedad por el sufrimiento de la humanidad.</p>
+                    <footer>Prólogo de su Autobiografía</footer>
+                </blockquote>
+            </section>
+
+            <section id="influencias">
+                <h2>Influencias Recibidas y Ejercidas</h2>
+                <h3>Influencias Recibidas</h3>
+                <ul>
+                    <li><strong>John Stuart Mill:</strong> Por su tradición empirista y su defensa del liberalismo y la libertad de expresión.</li>
+                    <li><strong>G. E. Moore:</strong> Su contemporáneo en Cambridge, con quien lideró la revuelta contra el idealismo.</li>
+                    <li><strong>Gottlob Frege y Giuseppe Peano:</strong> Pioneros de la lógica moderna cuyo trabajo fue fundamental para el logicismo de Russell.</li>
+                    <li><strong>Alfred North Whitehead:</strong> Su profesor y posterior colaborador en <em>Principia Mathematica</em>.</li>
+                </ul>
+
+                <h3>Influencias Ejercidas</h3>
+                <ul>
+                    <li><strong>Ludwig Wittgenstein:</strong> Su alumno más famoso, quien inicialmente continuó su trabajo lógico para luego criticarlo y fundar su propia e influyente corriente filosófica.</li>
+                    <li><strong>El Círculo de Viena y el positivismo lógico:</strong> Tomaron el empirismo y el análisis lógico de Russell como puntos de partida fundamentales.</li>
+                    <li><strong>Toda la tradición de la filosofía analítica:</strong> Filósofos como W.V.O. Quine, A.J. Ayer o Karl Popper dialogaron, expandieron o criticaron sus ideas.</li>
+                    <li><strong>Noam Chomsky:</strong> El lingüista y activista ha citado a Russell como una de sus principales influencias intelectuales y políticas.</li>
+                </ul>
+            </section>
+
+            <section id="obras">
+                <h2>Principales Obras</h2>
+                <p>La producción de Russell es vastísima. Aquí se destacan algunas de sus obras más influyentes, con enlaces a versiones gratuitas o comerciales en español.</p>
+
+                <div class="obra-card">
+                    <h4>Principia Mathematica (1910–1913)</h4>
+                    <p>Co-escrita con A. N. Whitehead. Una obra monumental que intenta fundamentar todas las matemáticas en la lógica. Compleja y técnica, pero de una importancia capital en la historia de la filosofía y la lógica.</p>
+                    <div class="links">
+                        <a href="https://archive.org/details/principiamathema01whituoft" target="_blank">Ver en Archive.org (Inglés)</a>
+                        <a href="https://www.amazon.es/Principia-Mathematica-Alfred-North-Whitehead/dp/0521626064/" target="_blank">Comprar en Amazon</a>
+                    </div>
+                </div>
+
+                <div class="obra-card">
+                    <h4>Los problemas de la filosofía (1912)</h4>
+                    <p>Una introducción brillante y accesible a los problemas centrales de la epistemología (teoría del conocimiento). Un punto de partida ideal para conocer su pensamiento.</p>
+                    <div class="links">
+                        <a href="https://archive.org/details/losproblemasdela00russgoog" target="_blank">Leer en Archive.org (Español)</a>
+                        <a href="http://www.gutenberg.org/ebooks/5827" target="_blank">Leer en Gutenberg (Inglés)</a>
+                        <a href="https://www.amazon.es/problemas-filosof%C3%ADa-Bertrand-Russell/dp/8433580309/" target="_blank">Comprar en Amazon</a>
+                    </div>
+                </div>
+
+                <div class="obra-card">
+                    <h4>Historia de la Filosofía Occidental (1945)</h4>
+                    <p>Un recorrido exhaustivo y ameno por la historia del pensamiento desde los presocráticos hasta el siglo XX. Fue un éxito de ventas y una de las razones por las que ganó el Nobel.</p>
+                    <div class="links">
+                        <a href="https://archive.org/details/historiadelafilosofiaoccidentalbertrandrussell" target="_blank">Leer en Archive.org (Español)</a>
+                        <a href="https://www.amazon.es/Historia-Filosof%C3%ADa-Occidental-Contempor%C3%A1nea-Humanidades/dp/846703582X/" target="_blank">Comprar en Amazon</a>
+                    </div>
+                </div>
+
+                <div class="obra-card">
+                    <h4>Por qué no soy cristiano (1927)</h4>
+                    <p>Una colección de ensayos donde expone su escepticismo religioso y su defensa del racionalismo y el humanismo laico. Un texto polémico y fundamental de su pensamiento social.</p>
+                    <div class="links">
+                        <a href="https://archive.org/details/por-que-no-soy-cristiano-bertrand-russell" target="_blank">Leer en Archive.org (Español)</a>
+                        <a href="https://www.amazon.es/Por-qu%C3%A9-soy-cristiano-Contempor%C3%A1nea/dp/8466352934/" target="_blank">Comprar en Amazon</a>
+                    </div>
+                </div>
+
+                <div class="obra-card">
+                    <h4>La conquista de la felicidad (1930)</h4>
+                    <p>Un ensayo práctico y optimista donde Russell explora las causas de la infelicidad en el mundo moderno y propone caminos racionales y psicológicos para alcanzar una vida plena.</p>
+                    <div class="links">
+                        <a href="https://archive.org/details/laconquistadelafelicidadbertrandrussell" target="_blank">Leer en Archive.org (Español)</a>
+                        <a href="https://www.amazon.es/conquista-felicidad-Contempor%C3%A1nea-Bertrand-Russell/dp/8499898993/" target="_blank">Comprar en Amazon</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="fuentes">
+                <h2>Fuentes y Enlaces de Interés</h2>
+                <p>Para profundizar en la vida y obra de Bertrand Russell, se recomiendan los siguientes recursos:</p>
+                <ul>
+                    <li><a href="https://es.wikipedia.org/wiki/Bertrand_Russell" target="_blank">Bertrand Russell en Wikipedia (Español)</a> - Un buen punto de partida con una visión general completa.</li>
+                    <li><a href="https://plato.stanford.edu/entries/russell/" target="_blank">Stanford Encyclopedia of Philosophy (Inglés)</a> - Un análisis académico y riguroso de su filosofía.</li>
+                    <li><a href="https://www.academia.edu/Documents/in/Bertrand_Russell" target="_blank">Artículos sobre Russell en Academia.edu</a> - Acceso a papers y ensayos de investigadores de todo el mundo.</li>
+                    <li><a href="https://bertrandrussellsociety.org/" target="_blank">The Bertrand Russell Society</a> - Organización dedicada a estudiar y promover su legado.</li>
+                    <li><a href="https://archive.org/search?query=creator%3A%22Russell%2C+Bertrand%22" target="_blank">Obras de Bertrand Russell en Internet Archive</a> - Un gran repositorio de sus libros y escritos digitalizados.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <p>Página creada con fines educativos. Todos los derechos de las obras citadas pertenecen a sus respectivos autores y editoriales.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
