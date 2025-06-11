@@ -12,3 +12,6 @@
 *.vsidx
 *.config
 *.sqlite-journal
+/.vs/russell/v17/.wsuo
+/.vs/russell/v17/DocumentLayout.json
+/.vs/VSWorkspaceState.json
